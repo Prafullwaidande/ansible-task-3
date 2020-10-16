@@ -1,0 +1,66 @@
+
+- hosts: localhost- hosts: localhost
+  vars_files:
+          - secure.yml
+  tasks:
+  - name: pro os
+    ec2:
+       key_name: "mykey1122"
+       instance_type: "t2.micro"
+       image: "ami-0e306788ff2473ccb"
+       wait: yes
+       count: 1
+       vpc_subnet_id: "subnet-07acad117d689a3ea"
+       assign_public_ip: yes
+       region: "ap-south-1"
+       state: present
+       group_id: "sg-0924e949b73db1f77"
+       aws_access_key: "{{ myuser }}"
+       aws_secret_key: "{{ mypass }}"
+    register: ec2
+  - name: pro os
+    ec2:
+       key_name: "mykey1122"
+       instance_type: "t2.micro"
+       image: "ami-0e306788ff2473ccb"
+       wait: yes
+       count: 1
+       vpc_subnet_id: "subnet-07acad117d689a3ea"
+       assign_public_ip: yes
+       region: "ap-south-1"
+       state: present
+       group_id: "sg-0924e949b73db1f77"
+       aws_access_key: "{{ myuser }}"
+       aws_secret_key: "{{ mypass }}"
+    register: ec2
+  - name: pro os
+    ec2:
+       key_name: "mykey1122"
+       instance_type: "t2.micro"
+       image: "ami-0e306788ff2473ccb"
+       wait: yes
+       count: 1
+       vpc_subnet_id: "subnet-07acad117d689a3ea"
+       assign_public_ip: yes
+       region: "ap-south-1"
+       state: present
+       group_id: "sg-0924e949b73db1f77"
+       aws_access_key: "{{ myuser }}"
+       aws_secret_key: "{{ mypass }}"
+    register: ec2
+  - name: pro os
+    ec2:
+       key_name: "mykey1122"
+       instance_type: "t2.micro"
+       image: "ami-0e306788ff2473ccb"
+       wait: yes
+       count: 1
+       vpc_subnet_id: "subnet-07acad117d689a3ea"
+       assign_public_ip: yes
+       region: "ap-south-1"
+       state: present
+       group_id: "sg-0924e949b73db1f77"
+       aws_access_key: "{{ myuser }}"
+       aws_secret_key: "{{ mypass }}"
+    register: ec2
+    
